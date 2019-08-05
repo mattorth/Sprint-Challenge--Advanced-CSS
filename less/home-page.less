@@ -1,8 +1,14 @@
 // Home Content
 
 .home {
+  width: 80%;
 
   .intro {
+    img {
+      border-radius: 0.5rem;
+      width:100%;
+      height: auto;
+    }
 
     h2 {
       padding: 15px;
@@ -58,6 +64,13 @@
       }
 
       .btn {
+        .button(@btn-bg-color, @porcelain);
+        width: fit-content;
+
+        &:hover {
+          background-color: @porcelain;
+          color: @btn-bg-color;
+        }
       }
     }
 
